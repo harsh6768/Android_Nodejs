@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/register_nameId"
+        android:layout_width="352dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/register_email_id"
+        android:layout_width="347dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/register_nameId"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/register_nameId"
+        app:layout_constraintTop_toBottomOf="@+id/register_nameId" />
+
+    <EditText
+        android:id="@+id/register_passId"
+        android:layout_width="346dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/register_email_id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/register_email_id"
+        app:layout_constraintTop_toBottomOf="@+id/register_email_id" />
+
+    <Button
+        android:id="@+id/reg_signup_btnId"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:text="SignUp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/register_passId"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/register_passId"
+        app:layout_constraintTop_toBottomOf="@+id/register_passId"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/reg_signin_btnId"
+        android:layout_width="359dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:text="SignIn"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/reg_signup_btnId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/reg_signup_btnId"
+        app:layout_constraintTop_toBottomOf="@+id/reg_signup_btnId"
+        android:textAllCaps="false"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
